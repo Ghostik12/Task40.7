@@ -43,5 +43,22 @@ namespace PhotoGalery.Pages
                 await DisplayAlert("Error", ex.Message.ToString(), "Ok");
             }
         }
+
+        private async void DeleteBtn(object sender, EventArgs e)
+        {
+            try
+            {
+                var photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions()
+                {
+                    DefaultCamera = CameraDevice.Rear,
+                    Directory = "Xamarin",
+                    SaveToAlbum = true
+                });
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message.ToString(), "Ok");
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@
 
         <Image x:Name="imgCam" Grid.Row="0" Grid.Column="0"/>
 
-        <Button x:Name="btnCam" Text="SNAP A PIC" Grid.Row="1" Grid.Column="0" Margin="2" Clicked="BtnCam_Clicked" BackgroundColor="#00a4fc" TextColor="#FFF"/>
+        <Button x:Name="btnCam" Text="Pick" Grid.Row="1" Grid.Column="0" Margin="2" Clicked="BtnCam_Clicked" BackgroundColor="#00a4fc" TextColor="#FFF"/>
+        <Button x:Name="btnDel" Text="Delete" Grid.Row="1" Grid.Column="1" Margin="2" Clicked="DeleteBtn" BackgroundColor="#00a4fc" TextColor="#FFF"/>
     </Grid>
 </ContentPage>
